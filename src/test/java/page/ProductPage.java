@@ -111,6 +111,14 @@ public class ProductPage {
         methods.waitBySeconds(4);
         methods.findElement(By.cssSelector("[name='agree']")).click();
         methods.findElement(By.xpath("//input[@type=\"submit\"]\t   ")).click();
+        methods.findElement(By.cssSelector("[name='agree']")).click();
+        methods.findElement(By.xpath("//input[@type=\"submit\"]\t   ")).click();
+        methods.click(By.className("checkout-logo"));
+        methods.waitBySeconds(3);
+        methods.hoverElement(By.className("menu top login"));
+        methods.waitBySeconds(3);
+        methods.click(By.xpath("//a[contains(@href, 'https://www.kitapyurdu.com/index.php?route=account/logout')]"));
+        methods.waitBySeconds(3);
 
 
 
